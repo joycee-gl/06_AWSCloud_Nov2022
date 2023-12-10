@@ -53,6 +53,8 @@ pip2 install mysql-connector
 
 ---------------------------------------
 
+python2 manage.py runserver 0:8080
+
 
 
 
