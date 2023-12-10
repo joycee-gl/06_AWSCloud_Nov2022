@@ -1,2 +1,4 @@
 
 --------------------
+scp -i ./invoice-processor-keypair.pem -r ./Invoice-Processor ubuntu@54.164.63.158:~
+
