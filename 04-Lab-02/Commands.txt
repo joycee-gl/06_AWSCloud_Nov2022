@@ -11,4 +11,48 @@ ls Invoice-Processor
 ------------------------
 
 
+sudo cp -r Invoice-Processor /opt
+
+
+sudo chown ubuntu:ubuntu -R /opt
+
+
+cd /opt/Invoice-Processor
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+
+sudo apt-get update
+
+
+sudo apt install python2.7 python-pip
+
+
+python2 --version
+
+
+pip2 --version
+
+
+python2 -m pip install --upgrade pip setuptools
+
+
+sudo pip2 install virtualenv
+
+
+virtualenv ~/.virtualenvs/djangodev
+
+
+pip2 install django
+
+
+pip2 install boto3
+
+
+pip2 install mysql-connector
+
+---------------------------------------
+
+
+
 
