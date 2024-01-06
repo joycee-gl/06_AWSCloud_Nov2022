@@ -1,2 +1,65 @@
 
 --------------------
+scp -i ./invoice-processor-keypair.pem -r ./Invoice-Processor ubuntu@54.164.63.158:~
+
+ssh -i ./invoice-processor-keypair.pem ubuntu@54.164.63.158
+
+cd ~
+
+ls Invoice-Processor
+
+------------------------
+
+
+sudo cp -r Invoice-Processor /opt
+
+
+sudo chown ubuntu:ubuntu -R /opt
+
+
+cd /opt/Invoice-Processor
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+
+sudo apt-get update
+
+
+sudo apt install python2.7 python-pip
+
+
+python2 --version
+
+
+pip2 --version
+
+
+python2 -m pip install --upgrade pip setuptools
+
+
+sudo pip2 install virtualenv
+
+
+virtualenv ~/.virtualenvs/djangodev
+
+
+pip2 install django
+
+
+pip2 install boto3
+
+
+pip2 install mysql-connector
+
+---------------------------------------
+
+python2 manage.py runserver 0:8080
+
+-----------------------------------------
+
+http://34.238.171.180:8080/sns
+
+--------------------------------------------
+
+
+
